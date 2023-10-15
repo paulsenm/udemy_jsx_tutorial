@@ -17,7 +17,12 @@ const root = ReactDOM.createRoot(el);
 
 //create component
 function App(){
-    return <h1>Hello world</h1>;
+    let message = "Hey ";
+    if (Math.random() > 0.5){
+        message = "Hello ";
+    }
+
+    return( <h1>{message} there!</h1>);
 }
 
 
